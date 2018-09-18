@@ -4,7 +4,7 @@ canvas模拟实现磁盘调度算法  Canvas simulation implements disk scheduli
 
 项目地址：[canvas-demo](https://github.com/michwh/canvas-demo)
 
-## [demo]( https://michwh.github.io/canvas-demo/)
+## [demo]( https://michwh.github.io/canvas-demo/main.html)
 
 ## 界面
 
