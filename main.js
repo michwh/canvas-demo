@@ -41,7 +41,7 @@ function randomNum(minNum,maxNum) {
 
 /**
  * 生成num个磁道号序列
- * 其中50%位于 0～499，25%分布在 500～999，25%分布在 1000～1499
+ * 其中50%位于 0～49，25%分布在 50～99，25%分布在 100～149
  *
  * @param {number} num 磁道号序列个数
  * @return {Array} trackSequence 磁道号序列数组
@@ -91,9 +91,9 @@ function selectAlgorithm(btn) {
 algorithms.forEach(key => key.addEventListener('click', selectAlgorithm));
 
 /**
- * 提示错误信息
+ * 提示信息
  * 
- * @param  {String} tips 错误信息
+ * @param  {String} tips 信息文本
  * @param  {boolean} bool 是否要提示信息
  */
 function showErrorMessage(tips, bool) {
@@ -207,6 +207,7 @@ const ctx = canvas.getContext('2d');
 
 /**
  * 获取css样式
+ * 如果是height或者width，先去掉单位再返回该属性值
  * 
  * @param  {Object} obj       将要获取样式的元素
  * @param  {String} attr      样式的属性
@@ -237,7 +238,7 @@ function drawLine(x1, y1, x2, y2) {
 }
 
 /**
- * 显示标记文本
+ * 显示坐标轴上的标记文本
  * 
  * @param  {String} text 要显示的文本
  * @param  {Number} xPos 横坐标
