@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>模拟实现磁盘调度算法</title>
+  <title>canvas模拟实现磁盘调度算法</title>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <canvas id="draw" width="800" height="800"></canvas>
+  <div class="user-opera">
+    <p>请选择算法：</p>
+    <div class="btn-group">
+      <button data-algorithm="fcfs" class="algorithm-btn">先来先服务算法（FCFS）</button>
+      <button data-algorithm="sstf" class="algorithm-btn">最短寻道时间算法（SSTF）</button>
+      <button data-algorithm="scan" class="algorithm-btn">电梯调度算法（SCAN）</button>
+      <button data-algorithm="c-scan" class="algorithm-btn">循环扫描算法（C-SCAN）</button>
+    </div>
+    <div class="second-opera">
+      <p>请输入磁头初始位置：</p>
+      <input type="text" class="head-position">
+      <button class="start-btn">实现</button>
+    </div>
+    <p class="error-message"></p>
+    <canvas id="draw">你的浏览器不支持HTML5 canvas</canvas>
+  </div>
   
   <script type="text/javascript" src="main.js"></script>
 </body>
